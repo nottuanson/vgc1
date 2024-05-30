@@ -205,6 +205,18 @@
           modal.style.display = "none";
         }
       }
+    
+      // Handle form submission
+      var form = document.getElementById("signupForm");
+      form.onsubmit = function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+        var email = document.getElementById("emailInput").value;
+        console.log("Email submitted: " + email);
+        // Here, you would typically send the email to your server
+        // e.g., using fetch or AJAX
+        modal.style.display = "none"; // Close the modal after submission
+        alert("Thank you for signing up!"); // Optional: Provide feedback to the user
+      };
     });
   </script>
 </body>
