@@ -129,8 +129,8 @@
       <span class="close">&times;</span>
       <h2>Sign Up for Exclusive Offers!</h2>
       <p>Subscribe to our newsletter for free value, offers, news, and more.</p>
-      <form id="signupForm">
-        <input type="email" id="emailInput" placeholder="Enter your email" required>
+      <form id="signupForm" action="/submit-email" method="POST">
+        <input type="email" id="emailInput" name="email" placeholder="Enter your email" required>
         <button type="submit">Sign Up</button>
       </form>
     </div>
@@ -167,57 +167,4 @@
       <div class="image-gallery">
         <img src="https://st2.depositphotos.com/1079068/10178/i/450/depositphotos_101780710-stock-photo-2nd-april-calendar.jpg" alt="Image 2">
         <img src="https://i.insider.com/649afcb5867d960019d93090?width=700" alt="Image 3">
-        <img src="https://yt3.googleusercontent.com/9KTLtR68VMAmtc-lrGdgvlJKO_8WO5gLTmM4xd86GbLq-hUPDMg6MsCTNZRfVqMBE3dGhUgLHw=s900-c-k-c0x00ffffff-no-rj" alt="Image 4">
-        <img src="https://imageio.forbes.com/specials-images/imageserve/65181691551c31e6b3d680e9/Bear-market/960x0.jpg?format=jpg&width=960" alt="Image 4">
-        <img src="https://www.nasdaq.com/sites/acquia.prod/files/image/29525db076bcc42505a356e55dbe94f38b28530b_getty-stock-market-data.jpg" alt="Image 5">
-      </div>
-    </div>
-    <div class="footer">
-      <p>&copy; 2024 The Veluz Gilio Company. All rights reserved.</p>
-    </div>
-  </div>
-
-  <script>
-    // JavaScript code goes here
-    document.addEventListener("DOMContentLoaded", function() {
-      // Get the modal
-      var modal = document.getElementById("myModal");
-    
-      // Get the button that opens the modal
-      var btn = document.getElementById("myBtn");
-    
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-    
-      // When the user clicks the button, open the modal
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
-    
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-    
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-    
-      // Handle form submission
-      var form = document.getElementById("signupForm");
-      form.onsubmit = function(event) {
-        event.preventDefault(); // Prevent the form from submitting normally
-        var email = document.getElementById("emailInput").value;
-        console.log("Email submitted: " + email);
-        // Here, you would typically send the email to your server
-        // e.g., using fetch or AJAX
-        modal.style.display = "none"; // Close the modal after submission
-        alert("Thank you for signing up!"); // Optional: Provide feedback to the user
-      };
-    });
-  </script>
-</body>
-</html>
+        <img src="https://yt3.googleusercontent.com/9KTLtR68VMAmtc-lrGdgvlJKO_8WO5gLTmM4xd86GbLq-hUPDMg6MsCTNZRfVqMBE3dGhUgLHw=s900-c-k-c0x00ffffff
