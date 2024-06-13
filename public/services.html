@@ -1,28 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - The Veluz Gilio Company</title>
+  <style>
+    /* Modal styles */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+    .navbar a:hover {
+      background-color: #555;
+    }
+    .main-content {
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .service-item {
+      margin-bottom: 20px;
+    }
+    .service-item h1 {
+      color: #007bff;
+    }
+    .service-item p {
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Button to open the modal -->
+  <button id="myBtn">Sign Up Now!</button>
+
+  <!-- The modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Sign Up for Exclusive Offers!</h2>
+      <p>Subscribe to our newsletter for free value, offers, news, and more.</p>
+      <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeEnt-ooeYxQTDhn_0OSPdi-FEgdkvRZRKz4gpK5dsU7XBX4Q/viewform?usp=sf_link'">Go to Google Form</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <h1>Services - The Veluz Gilio Company</h1>
+    </div>
+    <div class="navbar">
+      <a href="web.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="moreinfo.html">More Information</a>
+    </div>
+    <div class="main-content">
+      <div class="service-item">
+        <h1>Service 1: $50</h1>
+        <p>Our service description goes here...</p>
+      </div>
+      <div class="service-item">
+        <h1>Service 2: $70</h1>
+        <p>Our service description goes here...</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; 2024 The Veluz Gilio Company. All rights reserved.</p>
+    </div>
+  </div>
 
   <script>
-    // JavaScript code goes here
     // Get the modal
     var modal = document.getElementById("myModal");
-  
+
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
-  
+
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
-  
-    // When the user clicks the button, open the modal
+
+    // When the user clicks the button, open the modal 
     btn.onclick = function() {
       modal.style.display = "block";
     }
-  
+
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
       modal.style.display = "none";
     }
-  
+
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
       if (event.target == modal) {
@@ -30,180 +178,5 @@
       }
     }
   </script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services - The Veluz Gilio Company</title>
-<style>
-/* Modal styles */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 600px;
-  border-radius: 8px;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#signupForm {
-  margin-top: 20px;
-}
-
-#emailInput {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-button[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #0056b3;
-}
-/* Add your CSS styles here */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-}
-.container {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
-}
-.header {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
-}
-.navbar {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-}
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-}
-.navbar a:hover {
-  background-color: #555;
-}
-.main-content {
-  background-color: #fff;
-  padding: 20px;
-  margin-top: 20px;
-}
-.footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-}
-.service-item {
-  margin-bottom: 20px;
-}
-.service-item h3 {
-  color: #007bff;
-}
-.service-item p {
-  margin-top: 5px;
-}
-</style>
-</head>
-<body>
-  <button id="myBtn">Sign Up Now!</button>
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Sign Up for Exclusive Offers!</h2>
-      <p>Subscribe to our newsletter for free value, offers, news, and more.</p>
-      <form id="signupForm">
-        <input type="email" id="emailInput" placeholder="Enter your email" required>
-        <button type="submit">Sign Up</button>
-      </form>
-    </div>
-  </div>
-<div class="container">
-  <div class="header">
-    <h1>Services - The Veluz Gilio Company</h1>
-  </div>
-  <div class="navbar">
-    <a href="web.html">Home</a>
-    <a href="aboutus.html">About Us</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-    <a href="moreinfo.html">More Information</a>
-  </div>
-  <div class="main-content">
-    <div class="service-item">
-      <h1>Service 1: $50: high quality weekly blogs</h1>
-      <p>Our weekly blogs are meticulously curated to provide you with insightful recommendations on stocks to invest in and strategic insights on when to sell. We understand the dynamic nature of the stock market through 10+ years of experience and 5k+ of revenue generated and strive to equip you with the knowledge and foresight needed to make informed investment decisions.
-        Each week, our team of seasoned analysts delves deep into market trends, industry news, and financial data to identify opportunities that align with your investment goals. This can be both short-term and long-term investments. We highlight promising stocks and offer a comprehensive overview of the stock market, including key indicators, economic developments, and potential market shifts.
-        Our commitment to delivering accurate, timely, and actionable information sets us apart. Whether you're a seasoned investor or just starting your investment journey, our blogs are designed to empower you with the insights necessary to navigate the complexities of the stock market with confidence.
-        Stay tuned for our upcoming blogs, where we will continue to provide valuable insights and recommendations to help you build a robust investment portfolio and achieve your financial objectives.
-        .</p>
-    </div>
-    <div class="service-item">
-      <h1>Service 2: $70</h3>
-      <p>
-
-        <h2>in-Depth Guidance:</h2>
-        Our team of experienced financial experts provides in-depth guidance on various aspects of investing, including market analysis, stock selection, risk management, and portfolio optimization. We conduct thorough research and analysis to identify investment opportunities that align with your financial objectives and risk tolerance.
-        Personalized Investment Strategies:
-        We understand that every investor is unique, with different financial goals, risk profiles, and investment preferences. That's why we develop personalized investment strategies tailored to your specific circumstances. Whether you're focused on wealth accumulation, retirement planning, or generating income, we design strategies to help you achieve your goals efficiently.
-        <h2>Portfolio Management:</h2>
-        Effective portfolio management is essential for long-term investment success. Our dedicated portfolio managers work closely with you to build and manage a diversified portfolio that reflects your investment objectives and risk tolerance. We continuously monitor market conditions, analyze performance metrics, and make data-driven decisions to optimize your portfolio's performance.
-        <h2>Continuous Support:</h2>
-        Investing requires ongoing monitoring and adjustments, and we provide continuous support to ensure you stay on track. Our service includes daily market updates, timely investment recommendations, performance reviews, and proactive communication. Whether you have questions about market trends, investment opportunities, or portfolio adjustments, our team is readily available to provide assistance and guidance.
-        <h2>Educational Resources:</h2>
-        We believe in empowering investors with knowledge, and our service includes access to educational resources and workshops. We offer insights into investment strategies, financial planning, risk management techniques, and market trends. Our goal is to enhance your financial literacy and equip you with the skills needed to make informed investment decisions confidently.
-        <h2>Our Commitment:</h2>
-        We are committed to your success and prioritize your financial well-being above all else. Our transparent approach, ethical standards, and client-centric philosophy ensure that your interests always come first. We strive to build long-lasting relationships based on trust, integrity, and mutual respect.
-        .</p>
-    </div>
-  </div>
-  <div class="footer">
-    <p>&copy; 2024 The Veluz Gilio Company. All rights reserved.</p>
-  </div>
-</div>
 </body>
 </html>
