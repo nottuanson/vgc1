@@ -142,6 +142,7 @@
             <span class="close">&times;</span>
             <h2>Sign Up for Exclusive Offers!</h2>
             <p>Subscribe to our newsletter for free value, offers, news, and more.</p>
+            <button id="googleFormsBtn">SIGN UP!</button>
             <form id="signupForm">
                 <input type="email" id="emailInput" placeholder="Enter your email" required>
                 <button type="submit">Sign Up</button>
@@ -188,6 +189,9 @@
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
+        // Get the button inside the modal that opens Google Forms
+        var googleFormsBtn = document.getElementById("googleFormsBtn");
+
         // When the user clicks the button, open the modal
         btn.onclick = function () {
             modal.style.display = "block";
@@ -203,6 +207,11 @@
             if (event.target == modal) {
                 modal.style.display = "none";
             }
+        };
+
+        // When the user clicks on Google Forms button inside the modal, open the link
+        googleFormsBtn.onclick = function () {
+            window.open("https://docs.google.com/forms/d/e/1FAIpQLSeEnt-ooeYxQTDhn_0OSPdi-FEgdkvRZRKz4gpK5dsU7XBX4Q/viewform?usp=sf_link", "_blank");
         };
     </script>
 </body>
