@@ -34,7 +34,7 @@ console.log('Static file serving setup complete.');
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${3000}`);
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
 
 console.log('Server setup complete.');
