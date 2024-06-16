@@ -43,29 +43,35 @@
       cursor: pointer;
     }
 
-    #signupForm {
-      margin-top: 20px;
-    }
-
-    #emailInput {
-      width: calc(100% - 80px); /* Adjusted for button width */
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
-
-    button[type="submit"] {
+    /* Styling for the "SIGN UP!" button */
+    #googleFormsBtn {
       background-color: #007bff;
       color: #fff;
       border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
+      padding: 15px 30px; /* Increase padding to make the button bigger */
+      border-radius: 8px; /* Adjust border radius for a rounded look */
       cursor: pointer;
+      font-size: 18px; /* Increase font size */
+      margin-top: 20px; /* Optional: Add margin top for spacing */
     }
 
-    button[type="submit"]:hover {
+    #googleFormsBtn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Styling for the "Sign Up Now!" button */
+    #myBtn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 20px 40px; /* Increase padding to make the button bigger */
+      border-radius: 8px; /* Adjust border radius for a rounded look */
+      cursor: pointer;
+      font-size: 22px; /* Increase font size */
+      margin-top: 20px; /* Optional: Add margin top for spacing */
+    }
+
+    #myBtn:hover {
       background-color: #0056b3;
     }
 
@@ -143,10 +149,7 @@
       <span class="close">&times;</span>
       <h2>Sign Up for Exclusive Offers!</h2>
       <p>Subscribe to our newsletter for free value, offers, news, and more.</p>
-      <form id="signupForm">
-        <input type="email" id="emailInput" placeholder="Enter your email" required>
-        <button type="submit">Sign Up</button>
-      </form>
+      <button id="googleFormsBtn">SIGN UP!</button>
     </div>
   </div>
 
@@ -200,6 +203,9 @@
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
 
+      // Get the button inside the modal that opens Google Forms
+      var googleFormsBtn = document.getElementById("googleFormsBtn");
+
       // When the user clicks the button, open the modal
       btn.onclick = function () {
         modal.style.display = "block";
@@ -215,6 +221,11 @@
         if (event.target == modal) {
           modal.style.display = "none";
         }
+      };
+
+      // When the user clicks on Google Forms button inside the modal, open the link
+      googleFormsBtn.onclick = function () {
+        window.open("https://docs.google.com/forms/d/e/1FAIpQLSeEnt-ooeYxQTDhn_0OSPdi-FEgdkvRZRKz4gpK5dsU7XBX4Q/viewform?usp=sf_link", "_blank");
       };
     });
   </script>
