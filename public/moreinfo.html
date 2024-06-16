@@ -43,33 +43,7 @@
             cursor: pointer;
         }
 
-        #signupForm {
-            margin-top: 20px;
-        }
-
-        #emailInput {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-
-        button[type="submit"] {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-
-        /* Styling for the "SIGN UP!" button */
+        /* Styling for the "SIGN UP!" button inside the modal */
         #googleFormsBtn {
             background-color: #007bff;
             color: #fff;
@@ -82,6 +56,22 @@
         }
 
         #googleFormsBtn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Styling for the "Sign Up Now!" button */
+        #myBtn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 20px 40px; /* Increase padding to make the button bigger */
+            border-radius: 8px; /* Adjust border radius for a rounded look */
+            cursor: pointer;
+            font-size: 20px; /* Increase font size */
+            margin: 20px 0; /* Optional: Add margin for spacing */
+        }
+
+        #myBtn:hover {
             background-color: #0056b3;
         }
 
@@ -159,10 +149,6 @@
             <h2>Sign Up for Exclusive Offers!</h2>
             <p>Subscribe to our newsletter for free value, offers, news, and more.</p>
             <button id="googleFormsBtn">SIGN UP!</button>
-            <form id="signupForm">
-                <input type="email" id="emailInput" placeholder="Enter your email" required>
-                <button type="submit">Sign Up</button>
-            </form>
         </div>
     </div>
 
