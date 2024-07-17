@@ -110,6 +110,40 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+    .stock-performance {
+      margin-top: 20px;
+    }
+    .stock-list {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .stock-list div {
+      flex: 1;
+      padding: 10px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      margin-right: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .stock-list div:last-child {
+      margin-right: 0;
+    }
+    .stock-list .header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px 8px 0 0;
+    }
+    .stock-list .content {
+      padding: 10px;
+      background-color: #fff;
+      text-align: center;
+    }
+    .stock-list .content .stock {
+      margin-bottom: 5px;
+    }
   </style>
 </head>
 <body>
@@ -156,52 +190,30 @@
         </div>
       </div>
       <div class="image-gallery">
-        <img src="https://www.investopedia.com/thmb/3ahhrpgTBflCbK88BCGcXU2MinA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/WhatscomingupforteslabroadcomspotifyboeingandmcdonaldsinJuly_-e1877892edbb4ea39bb34075b714d8bf.jpg" alt="Image 2">
+        <img src="https://www.investopedia.com/thmb/3ahhrpgTBflCbK88BCGcXU2MinA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/WhatscomingupforteslabroadcomspotifyboeingandmcdonaldsinJuly_-e1877892edbb4ea39bb34075b714d8bf.jpg" alt="Image 1">
         <img src="https://imageio.forbes.com/specials-images/imageserve/65181691551c31e6b3d680e9/Bear-market/960x0.jpg?format=jpg&width=960" alt="Image 2">
         <img src="https://i.insider.com/649afcb5867d960019d93090?width=700" alt="Image 3">
-        <img src="https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Aa47cf22a-7a34-4bab-90d1-250e4388252c?source=next-article&fit=scale-down&quality=highest&width=1440&dpr=1" alt="image 2">
-        <img src="https://yt3.googleusercontent.com/9KTLtR68VMAmtc-lrGdgvlJKO_8WO5gLTmM4xd86GbLq-hUPDMg6MsCTNZRfVqMBE3dGhUgLHw=s900-c-k-c0x00ffffff" alt="Image 4">
+        <img src="https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Aa47cf22a-7a34-4bab-90d1-250e4388252c?source=next-article&fit=scale-down&quality=highest&width=1440&dpr=1" alt="Image 4">
+        <img src="https://yt3.googleusercontent.com/9KTLtR68VMAmtc-lrGdgvlJKO_8WO5gLTmM4xd86GbLq-hUPDMg6MsCTNZRfVqMBE3dGhUgLHw=s900-c-k-c0x00ffffff" alt="Image 5">
       </div>
-    </div>
-    <div class="footer">
-      <p>&copy; 2023 The Veluz Gilio Company</p>
-    </div>
-  </div>
-  
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var modalBtn = document.getElementById("modalBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // Get the button inside the modal that opens Google Forms
-    var googleFormsBtn = document.getElementById("googleFormsBtn");
-
-    // When the user clicks the button, open the modal 
-    modalBtn.onclick = function() {
-      modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-
-    // When the user clicks on Google Forms button inside the modal, open the link
-    googleFormsBtn.onclick = function() {
-      window.open("https://docs.google.com/forms/d/e/1FAIpQLSeEnt-ooeYxQTDhn_0OSPdi-FEgdkvRZRKz4gpK5dsU7XBX4Q/viewform?usp=sf_link", "_blank");
-    }
-  </script>
-</body>
-</html>
+      <div class="stock-performance">
+        <h2>Index</h2>
+        <p>The S&P 500 index is on an all time rise. The return last year for the S&P was just over 26%. Of course not every stock can do well in the S&P all the time. So it can be useful to keep an eye on some of the stocks that are underperforming. Now usually you wouldn’t have to think twice about what that one underperforming stock is out of 500, but that one underperforming stock this year could be the over performer next year. So, some of the underperforming stocks for the S&P 500 in 2024 are:</p>
+        <div class="stock-list">
+          <div>
+            <div class="header">Underperforming Stocks</div>
+            <div class="content">
+              <div class="stock">WBA -53.7%</div>
+              <div class="stock">LULU -41.6%</div>
+              <div class="stock">INTC -38.4%</div>
+              <div class="stock">EPAM -36.7%</div>
+              <div class="stock">WBD -34.6%</div>
+            </div>
+          </div>
+          <div>
+            <div class="header">Strong Performing Stocks</div>
+            <div class="content">
+              <div class="stock">SMCI +188.2%</div>
+              <div class="stock">NVDA +149.5%</div>
+              <div class="stock">VST +123.2%</div>
+              <div
