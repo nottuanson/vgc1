@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - The Veluz Gilio Company</title>
+  <title>About Us - The Veluz Gilio Company</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     /* Modal styles */
@@ -44,23 +44,39 @@
       cursor: pointer;
     }
 
-    /* Styling for buttons */
-    button {
+    /* Styling for the "SIGN UP!" button */
+    #googleFormsBtn {
       background-color: #007bff;
       color: #fff;
       border: none;
-      padding: 15px 30px;
+      padding: 15px 30px; /* Increase padding to make the button bigger */
       border-radius: 8px; /* Adjust border radius for a rounded look */
       cursor: pointer;
       font-size: 18px; /* Increase font size */
       margin-top: 20px; /* Optional: Add margin top for spacing */
     }
 
-    button:hover {
+    #googleFormsBtn:hover {
       background-color: #0056b3;
     }
 
-    /* Add your CSS styles here */
+    /* Styling for the "Sign Up Now!" button */
+    #myBtn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 20px 40px; /* Increase padding to make the button bigger */
+      border-radius: 8px; /* Adjust border radius for a rounded look */
+      cursor: pointer;
+      font-size: 22px; /* Increase font size */
+      margin-top: 20px; /* Optional: Add margin top for spacing */
+    }
+
+    #myBtn:hover {
+      background-color: #0056b3;
+    }
+
+    /* General CSS styles */
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
@@ -68,11 +84,13 @@
       background: linear-gradient(135deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff);
       color: #333;
     }
+
     .container {
       max-width: 1200px;
       margin: 20px auto;
       padding: 0 20px;
     }
+
     .header {
       background-color: rgba(0, 123, 255, 0.8);
       color: #fff;
@@ -80,20 +98,24 @@
       text-align: center;
       border-bottom: 5px solid rgba(0, 86, 179, 0.8);
     }
+
     .navbar {
       background-color: #333;
       color: #fff;
       padding: 15px 0;
+      text-align: center;
     }
+
     .navbar a {
       color: #fff;
       text-decoration: none;
       padding: 10px 20px;
-      display: inline-block;
     }
+
     .navbar a:hover {
       background-color: rgba(0, 123, 255, 0.8);
     }
+
     .main-content {
       background-color: rgba(255, 255, 255, 0.9);
       padding: 30px;
@@ -101,20 +123,25 @@
       border-radius: 8px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
+
     .footer {
       background-color: #333;
       color: #fff;
       text-align: center;
       padding: 10px 0;
+      margin-top: 20px;
     }
-    .service-item {
-      margin-bottom: 20px;
+
+    .image-gallery {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
     }
-    .service-item h1 {
-      color: #007bff;
-    }
-    .service-item p {
-      line-height: 1.8;
+
+    .image-gallery img {
+      width: 20%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
@@ -128,29 +155,41 @@
       <span class="close">&times;</span>
       <h2>Sign Up for Exclusive Offers!</h2>
       <p>Subscribe to our newsletter for free value, offers, news, and more.</p>
-      <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeEnt-ooeYxQTDhn_0OSPdi-FEgdkvRZRKz4gpK5dsU7XBX4Q/viewform?usp=sf_link'">SIGN UP!</button>
+      <button id="googleFormsBtn">SIGN UP!</button>
     </div>
   </div>
 
+  <!-- Content -->
   <div class="container">
     <div class="header">
-      <h1>Services - The Veluz Gilio Company</h1>
+      <h1>About Us - The Veluz Gilio Company</h1>
     </div>
     <div class="navbar">
-      <a href="web.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="aboutus.html">About Us</a>
       <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
       <a href="moreinfo.html">More Information</a>
     </div>
     <div class="main-content">
-      <div class="service-item">
-        <h1>Service 1: $50</h1>
-        <p>Our weekly blogs offer a deep dive into the ever-evolving world of stocks and options, providing you with insightful analysis and up-to-the-minute information. Written by our team of top-tier financial professionals, each blog post is designed to equip you with the knowledge and strategies needed to navigate the complex financial markets confidently. Our experts cover a wide range of topics, from fundamental and technical analysis to market trends and economic indicators. Whether you are a novice investor or a seasoned trader, our blogs are an invaluable resource for staying informed and making informed investment decisions.</p>
-      </div>
-      <div class="service-item">
-        <h1>Service 2: $70</h1>
-        <p>Our All-in-One Investing package is a comprehensive service designed to guide you through every step of your investment journey. This service offers personalized, step-by-step assistance tailored to your unique financial goals and risk tolerance. Our expert advisors will work closely with you to develop a customized investment plan, provide ongoing support, and help you navigate the complexities of the financial markets. From asset allocation and portfolio management to retirement planning and tax optimization, our team ensures that you have all the tools and knowledge you need to maximize your returns and achieve long-term financial success. With our All-in-One Investing package, you can be confident that you are making the right investment decisions at every stage of your financial journey.</p>
+      <h2>Welcome to VGC - Your Gateway to Financial Success!</h2>
+      <p>At VGC, we understand the importance of financial literacy and empowerment, especially for young people. That's why we are dedicated to providing world-class help with investing tailored specifically for the next generation of investors.</p>
+      <p>Our approach is designed to make investing accessible, engaging, and rewarding for young individuals who are eager to build a secure financial future. Whether you're just starting your investment journey or looking to grow your portfolio, VGC is here to guide you every step of the way.</p>
+      <h3>What Sets VGC Apart?</h3>
+      <ul>
+        <li><strong>Expert Guidance:</strong> Our team of experienced investment advisors and financial experts are here to provide personalized guidance and support based on your unique goals and risk tolerance.</li>
+        <li><strong>Educational Resources:</strong> We offer a wealth of educational resources, from articles and videos to workshops and webinars, to help you learn about investing, understand financial concepts, and make informed decisions.</li>
+        <li><strong>Cutting-edge Technology:</strong> With our user-friendly platform and advanced tools, you can easily manage your investments, track performance, and stay updated on market trends, all in one place.</li>
+        <li><strong>Community Engagement:</strong> Connect with like-minded investors, share insights, and collaborate on investment ideas through our vibrant community forums and networking events.</li>
+        <li><strong>Youth-Centric Approach:</strong> We recognize the importance of catering to the needs and preferences of young investors, ensuring that our services are accessible, relevant, and impactful for this demographic.</li>
+      </ul>
+      <p>Join VGC today and embark on a journey towards financial freedom and success. Let us help you unlock the potential of investing and pave the way for a brighter financial future!</p>
+      <div class="image-gallery">
+        <img src="https://via.placeholder.com/150" alt="Image 1">
+        <img src="https://via.placeholder.com/150" alt="Image 2">
+        <img src="https://via.placeholder.com/150" alt="Image 3">
+        <img src="https://via.placeholder.com/150" alt="Image 4">
+        <img src="https://via.placeholder.com/150" alt="Image 5">
       </div>
     </div>
     <div class="footer">
@@ -159,31 +198,42 @@
   </div>
 
   <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
+    // JavaScript code goes here
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get the modal
+      var modal = document.getElementById("myModal");
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
+      // Get the button inside the modal that opens Google Forms
+      var googleFormsBtn = document.getElementById("googleFormsBtn");
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
         modal.style.display = "none";
-      }
-    }
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      // When the user clicks the "SIGN UP!" button inside the modal, redirect to Google Forms
+      googleFormsBtn.onclick = function () {
+        window.location.href = "https://forms.gle/VQ1mSmD9LJwUbGHu5";
+      };
+    });
   </script>
 </body>
 </html>
